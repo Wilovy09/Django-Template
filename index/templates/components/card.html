@@ -1,0 +1,12 @@
+{% load components %}
+
+<div class="card bg-primary text-primary-content w-96">
+  <div class="card-body">
+    <h2 class="card-title">{% render_slot slots.title %}</h2>
+    <p>{% render_slot slots.description %}</p>
+    <div class="card-actions justify-end">
+        <!-- This can we made with another component -->
+        <button class="btn">Buy Now</button>
+    </div>
+  </div>
+</div>
