@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-5jhiueba)8icf3i4q=8_ndp#b3nac!ig1a*pu(fxwg2hh)jtw6
 # NPM_BIN_PATH = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1', 'http://localhost']
@@ -144,7 +144,7 @@ USE_TZ = True
 STATIC_URL = 'theme/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "theme/static/")]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'theme/staticfiles')
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
