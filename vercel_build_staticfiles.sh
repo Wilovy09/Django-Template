@@ -1,5 +1,5 @@
 echo "Creating venv"
-python3.9 -m venv venv
+python3 -m venv venv
 source ./venv/bin/activate
 
 echo "Installing requirements..."
@@ -14,4 +14,4 @@ pwd && ls
 
 # Collecting StaticFiles
 echo "Colectando StaticFiles..."
-python3.9 manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
