@@ -1,5 +1,6 @@
 echo "Creating venv"
 python3.9 -m venv venv
+source ./venv/bin/activate
 
 echo "Installing requirements..."
 pip3 install -r requirements.txt
